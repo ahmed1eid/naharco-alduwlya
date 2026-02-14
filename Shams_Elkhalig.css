@@ -330,6 +330,7 @@ img {
         height: 100vh;
         width: 70%;
         background-color: var(--white);
+        color: var(--primary-color);
         flex-direction: column;
         justify-content: center;
         gap: 30px;
