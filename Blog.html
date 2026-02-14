@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدونة | شمس الخليج للخدمات اللوجستية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Shams_Elkhalig.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .blog-section {
+            padding: 80px 20px;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-img img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 20px;
+        }
+
+        .blog-date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .blog-title {
+            font-size: 1.2rem;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .blog-desc {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            color: #c5a059;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <img src="Shams_Elkhalig_Logo.png" alt="لوجو شمس الخليج" class="logo-img">
+                <span class="logo-text">شمس الخليج</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Shams_Elkhalig.html">الرئيسية</a></li>
+                <li><a href="AboutUs.html">من نحن</a></li>
+                <li><a href="Shams_Elkhalig.html#services">خدماتنا</a></li>
+                <li><a href="Blog.html" class="active">المدونة</a></li>
+                <li><a href="ContactUs.html">تواصل معنا</a></li>
+                <li><a href="Blog_en.html" class="lang-btn">English</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>المدونة وأحدث الأخبار</h1>
+            <p>تابع أحدث أخبار النقل واللوجستيات ومشاريعنا الجديدة</p>
+        </div>
+    </section>
+
+    <section class="blog-section container">
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="https://leadertrans-eg.com/wp-content/uploads/2025/03/S3.webp" alt="مشروع 1">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">10 فبراير 2026</span>
+                    <h3 class="blog-title">توسيع خدماتنا في ميناء جدة الإسلامي</h3>
+                    <p class="blog-desc">يسعدنا أن نعلن عن توسيع عمليات التخليص الجمركي في ميناء جدة لخدمة عملائنا بشكل
+                        أسرع.</p>
+                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="https://leadertrans-eg.com/wp-content/uploads/2025/03/S2.webp" alt="مشروع 2">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">05 فبراير 2026</span>
+                    <h3 class="blog-title">أفضل الممارسات لاستيراد البضائع من الصين</h3>
+                    <p class="blog-desc">دليل شامل لأهم الخطوات والنصائح لضمان استيراد آمن وناجح من الأسواق الصينية.</p>
+                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="https://leadertrans-eg.com/wp-content/uploads/elementor/thumbs/web-r45x534pvc7awve85yujy0htibmelq48e98o79819s.webp"
+                        alt="مشروع 3">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">20 يناير 2026</span>
+                    <h3 class="blog-title">شراكة استراتيجية جديدة مع خطوط ملاحية عالمية</h3>
+                    <p class="blog-desc">وقعنا اتفاقية تعاون مع كبرى شركات الشحن لتقديم أسعار تنافسية لعملائنا الكرام.
+                    </p>
+                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3>شمس الخليج</h3>
+                <p>نحن نسعى دائماً لتقديم أفضل الخدمات اللوجستية وحلول التصدير لعملائنا في جميع أنحاء العالم.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="Shams_Elkhalig.html">الرئيسية</a></li>
+                    <li><a href="AboutUs.html">من نحن</a></li>
+                    <li><a href="Shams_Elkhalig.html#services">خدماتنا</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>تواصل معنا</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                    <li><i class="fas fa-phone"></i> +966 12 345 6789</li>
+                    <li><i class="fas fa-envelope"></i> info@shamselkhalig.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 شمس الخليج. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="Shams_Elkhalig.js"></script>
+</body>
+
+</html>
