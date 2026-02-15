@@ -43,8 +43,9 @@ img {
 }
 
 /* 2. الهيدر ونافذة التنقل (Navbar) */
+
 .navbar {
-    background-color: var(--white);
+    background-color: var(--primary-color);
     height: 80px;
     display: flex;
     align-items: center;
@@ -72,10 +73,11 @@ img {
     height: 50px;
 }
 
+/* 1. تعديل لون اسم الشركة بجانب اللوجو */
 .logo-text {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--text-light); /* يمكنك تغييره للون ثابت مثل #000000 */
 }
 
 .nav-links {
@@ -84,17 +86,22 @@ img {
     align-items: center;
 }
 
+/* 2. تعديل لون روابط القائمة (الكلام) */
 .nav-links a {
     font-weight: 500;
     transition: var(--transition);
-    color: var(--primary-color);
+    
+    /* غيّر اللون هنا */
+    color: var(--white); /* لون رمادي غامق احترافي بدلاً من الأزرق */
 }
 
+/* 3. تعديل اللون عند مرور الماوس أو عندما يكون الرابط نشطاً */
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--accent-color);
+    /* غيّر اللون هنا */
+    color: var(--accent-color); /* سيتحول للذهبي عند الوقوف عليه */
+    border-bottom: 2px solid var(--accent-color); /* إضافة خط سفلي بسيط لمسة جمالية */
 }
-
 /* 3. قسم الهيرو (Hero Section) */
 .hero {
     position: relative;
