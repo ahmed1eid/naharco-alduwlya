@@ -30,3 +30,31 @@ navLinks.forEach(link => {
         burger.classList.remove('toggle');
     });
 });
+
+// Logo Lightbox Feature
+document.addEventListener('DOMContentLoaded', () => {
+    const logoImg = document.querySelector('.logo-img');
+    if (logoImg) {
+        // Create lightbox element
+        const lightbox = document.createElement('div');
+        lightbox.className = 'logo-lightbox';
+
+        const lightboxImg = document.createElement('img');
+        lightboxImg.src = logoImg.src;
+        lightboxImg.alt = logoImg.alt;
+
+        lightbox.appendChild(lightboxImg);
+        document.body.appendChild(lightbox);
+
+        // Open lightbox
+        logoImg.addEventListener('click', (e) => {
+            e.preventDefault();
+            lightbox.classList.add('active');
+        });
+
+        // Close lightbox on click
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+    }
+});
