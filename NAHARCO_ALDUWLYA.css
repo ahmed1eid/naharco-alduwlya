@@ -821,7 +821,7 @@ html[dir="ltr"] .social-links a {
 
 /* Modern About Us Styles */
 .modern-hero {
-    background: linear-gradient(135deg, var(--primary-color), #001a33), url('https://leadertrans-eg.com/wp-content/uploads/2025/03/S3.webp');
+    background: linear-gradient(135deg, var(--primary-color), #001a33);
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
