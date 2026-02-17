@@ -67,6 +67,27 @@ img {
     width: 100%;
     max-width: 100%;
     padding: 0 50px;
+    position: relative;
+    /* Essential for absolute positioning of centered items */
+}
+
+/* Language Globe Icon */
+.lang-toggle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: var(--transition);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lang-toggle:hover {
+    color: var(--accent-color);
+    transform: translateX(-50%) rotate(15deg) scale(1.1);
 }
 
 .logo-container {
