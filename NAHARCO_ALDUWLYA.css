@@ -62,9 +62,11 @@ img {
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
+    gap: 50px;
+    max-width: 100%;
 }
 
 .logo-container {
@@ -95,22 +97,16 @@ img {
 
 /* 2. تعديل لون روابط القائمة (الكلام) */
 .nav-links a {
-    color: #000000;
     font-weight: 500;
     transition: var(--transition);
-    /* غيّر اللون هنا */
-    color: #db7777;
-    /* لون رمادي غامق احترافي بدلاً من الأزرق */
+    color: var(--white);
 }
 
 /* 3. تعديل اللون عند مرور الماوس أو عندما يكون الرابط نشطاً */
 .nav-links a:hover,
 .nav-links a.active {
-    /* غيّر اللون هنا */
-    color: green;
-    /* سيتحول للذهبي عند الوقوف عليه */
-    border-bottom: 2px solid var(--text-light);
-    /* إضافة خط سفلي بسيط لمسة جمالية */
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
 }
 
 /* 3. قسم الهيرو (Hero Section) */
@@ -455,6 +451,10 @@ html[dir="ltr"] .social-links a {
 @media (max-width: 768px) {
     .burger {
         display: block;
+    }
+
+    .nav-container {
+        justify-content: space-between;
     }
 
     .nav-links {
