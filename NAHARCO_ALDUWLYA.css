@@ -85,7 +85,6 @@ img {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-light);
-    /* يمكنك تغييره للون ثابت مثل #000000 */
 }
 
 .nav-links {
@@ -96,10 +95,9 @@ img {
 
 /* 2. تعديل لون روابط القائمة (الكلام) */
 .nav-links a {
-    color: #000;
+    color: #000000;
     font-weight: 500;
     transition: var(--transition);
-
     /* غيّر اللون هنا */
     color: #db7777;
     /* لون رمادي غامق احترافي بدلاً من الأزرق */
