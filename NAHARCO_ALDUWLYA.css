@@ -465,7 +465,7 @@ html[dir="ltr"] .social-links a {
     display: block;
     width: 28px;
     height: 3px;
-    background: var(--primary-color);
+    background: var(--white);
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -485,8 +485,8 @@ html[dir="ltr"] .social-links a {
         right: 0;
         top: 0;
         height: 100vh;
-        width: 70%;
-        background-color: var(--white);
+        width: 40%;
+        background-color: #003366;
         color: var(--primary-color);
         flex-direction: column;
         justify-content: center;
