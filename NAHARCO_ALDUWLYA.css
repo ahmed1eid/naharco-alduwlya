@@ -43,7 +43,8 @@ ul {
 }
 
 img {
-    max-width: 100%;
+    width: 500px;
+    height: 500px;
 }
 
 /* 2. الهيدر ونافذة التنقل (Navbar) */
