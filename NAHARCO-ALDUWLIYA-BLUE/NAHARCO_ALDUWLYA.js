@@ -2,10 +2,10 @@
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.background = '#002244';
+        navbar.style.background = '#440000';
         navbar.style.height = '70px';
     } else {
-        navbar.style.background = '#003366';
+        navbar.style.background = '#990000';
         navbar.style.height = '80px';
     }
 });

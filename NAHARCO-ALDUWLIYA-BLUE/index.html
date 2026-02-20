@@ -12,146 +12,147 @@
 
 
 
-<style>
-:root{
-    --primary-color:#003366;
-    --accent-color:#c5a059;
-}
+    <style>
+        :root {
+            --primary-color: #990000;
+            --accent-color: #c5a059;
+        }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Tajawal',sans-serif;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
 
-body{
-    background:#f5f7fa;
-}
+        body {
+            background: #f5f7fa;
+        }
 
-/* ===== HERO ===== */
-.hero{
-    position:relative;
-    height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:#fff;
-    overflow:hidden;
-    z-index:1;
-}
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+            z-index: 1;
+        }
 
-.hero video{
-    position:absolute;
-    top:50%;
-    left:50%;
-    min-width:100%;
-    min-height:100%;
-    transform:translate(-50%,-50%);
-    object-fit:cover;
-    z-index:-2;
-}
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            z-index: -2;
+        }
 
-.hero::after{
-    content:"";
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    z-index:-1;
-}
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
 
-.hero-content h1{
-    font-size:3rem;
-    margin-bottom:20px;
-}
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
 
-.hero-content p{
-    font-size:1.2rem;
-    max-width:700px;
-    margin:auto;
-}
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: auto;
+        }
 
-/* ===== STATS SECTION (الجزء اللي طالع داخل على الهيرو) ===== */
-.stats-section{
-    position:relative;
-    margin-top:-90px; /* يخليه نصه داخل الهيرو */
-    z-index:10;
-    padding:0 20px;
-}
+        /* ===== STATS SECTION (الجزء اللي طالع داخل على الهيرو) ===== */
+        .stats-section {
+            position: relative;
+            margin-top: -90px;
+            /* يخليه نصه داخل الهيرو */
+            z-index: 10;
+            padding: 0 20px;
+        }
 
-.stats-wrapper{
-    max-width:1100px;
-    margin:auto;
-    background:#fff;
-    border-radius:20px;
-    padding:35px 20px;
-    box-shadow:0 20px 50px rgba(0,0,0,0.15);
-}
+        .stats-wrapper {
+            max-width: 1100px;
+            margin: auto;
+            background: #fff;
+            border-radius: 20px;
+            padding: 35px 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
 
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-    text-align:center;
-}
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
 
-.modern-stat i{
-    font-size:28px;
-    margin-bottom:15px;
-    color:var(--primary-color);
-}
+        .modern-stat i {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
 
-.modern-stat .counter{
-    display:block;
-    font-size:1.8rem;
-    font-weight:700;
-    color:#000;
-    margin-bottom:5px;
-}
+        .modern-stat .counter {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 5px;
+        }
 
-.modern-stat p{
-    color:#555;
-    font-weight:500;
-}
+        .modern-stat p {
+            color: #555;
+            font-weight: 500;
+        }
 
-/* Responsive */
-@media(max-width:768px){
-    .stats-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
+        /* Responsive */
+        @media(max-width:768px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
-@media(max-width:480px){
-    .stats-grid{
-        grid-template-columns:1fr;
-    }
-}
+        @media(max-width:480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
 
-.vision-points {
-    margin-top: 25px;
-    display: grid;
-    gap: 12px;
-}
+        .vision-points {
+            margin-top: 25px;
+            display: grid;
+            gap: 12px;
+        }
 
-.vision-points div {
-    background: #fff;
-    padding: 12px 18px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    font-weight: 500;
-    color: #333;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+        .vision-points div {
+            background: #fff;
+            padding: 12px 18px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            font-weight: 500;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-.vision-points i {
-    color: green;
-}
-</style>
+        .vision-points i {
+            color: green;
+        }
+    </style>
 </head>
 
 <body>
@@ -169,7 +170,7 @@ body{
                 <li><a href="Services.html">خدماتنا</a></li>
                 <li><a href="ContactUs.html">تواصل معنا</a></li>
             </ul>
-            
+
             <div class="burger">
                 <span></span>
                 <span></span>
@@ -229,25 +230,27 @@ body{
         <div class="services-grid">
             <div class="card">
                 <div class="card-img">
-                    <img src="img/1ar" alt="استشارات جمركية"/>
+                    <img src="img/1ar" alt="استشارات جمركية" />
                 </div>
                 <h3> الاستشارات الجمركية والتجارية </h3>
-                <p>نقدم خبرتنا من خلال دعم عملائنا بدراسات جدوى، واستشارات قانونية جمركية وضريبية، وتحليل السوق الكويتي للوصول بالعميل إلى أفضل قرار.</p>
+                <p>نقدم خبرتنا من خلال دعم عملائنا بدراسات جدوى، واستشارات قانونية جمركية وضريبية، وتحليل السوق الكويتي
+                    للوصول بالعميل إلى أفضل قرار.</p>
             </div>
             <div class="card">
                 <div class="card-img">
                     <img src="img/1" alt="توريد بضائع" style="width: 326.667px; height: 200px;" />
                 </div>
                 <h3>توريد السلع من الصين إلى السوق الكويتي</h3>
-                <p>نحن نربطك مباشرة بمصانع الصين لتوفير أفضل المنتجات والموردين بأسعار تنافسية، مع ضمان الجودة ومتابعة التفاوض لتحقيق أفضل الشروط للسوق الكويتي.</p>
+                <p>نحن نربطك مباشرة بمصانع الصين لتوفير أفضل المنتجات والموردين بأسعار تنافسية، مع ضمان الجودة ومتابعة
+                    التفاوض لتحقيق أفضل الشروط للسوق الكويتي.</p>
             </div>
             <div class="card">
                 <div class="card-img">
-                    <img src="img/8"
-                        alt="خدمات لوجستية"/>
+                    <img src="img/8" alt="خدمات لوجستية" />
                 </div>
                 <h3> اللوجستيات وحلول الشحن </h3>
-                <p>نقدم خدمات لوجستية متكاملة من الباب إلى الباب بين الكويت والصين، تشمل جميع وسائل الشحن، مع تخزين آمن وتتبع دقيق لضمان التسليم في الوقت المحدد.</p>
+                <p>نقدم خدمات لوجستية متكاملة من الباب إلى الباب بين الكويت والصين، تشمل جميع وسائل الشحن، مع تخزين آمن
+                    وتتبع دقيق لضمان التسليم في الوقت المحدد.</p>
             </div>
         </div>
         <div class="text-center">
@@ -258,16 +261,17 @@ body{
     <section class="bio-section" style="direction: rtl;">
         <div class="container bio-grid">
             <div class="bio-image">
-                <img src="img/7.jpg"
-                    alt="About Naharcom International"/>
+                <img src="img/7.jpg" alt="About Naharcom International" />
             </div>
             <div class="bio-text">
-                <h1 style="color: #003366;">طرق الشحن</h1>
+                <h1 style="color: #990000;">طرق الشحن</h1>
                 <p>
-                     <strong>نوفرلكم في شركة نهاركم الدولية</strong> الشحن الجوى والبحري والبرى لسهولة التوصيل من السوق الصيني الي السوق الكويتي باكثر من طريقة لتسهيل طرق الاستيراد والتصدير.
+                    <strong>نوفرلكم في شركة نهاركم الدولية</strong> الشحن الجوى والبحري والبرى لسهولة التوصيل من السوق
+                    الصيني الي السوق الكويتي باكثر من طريقة لتسهيل طرق الاستيراد والتصدير.
                 </p>
                 <p>
-                    بفضل خبرتنا الواسعة في الشحن الدولي لنقل طلاباتكم باكثر من طريقة للحفاظ علي امن المنتج وتوصيل الشحنة باسرع مدة واقل تكلفة..
+                    بفضل خبرتنا الواسعة في الشحن الدولي لنقل طلاباتكم باكثر من طريقة للحفاظ علي امن المنتج وتوصيل الشحنة
+                    باسرع مدة واقل تكلفة..
                 </p>
                 <br>
                 <a href="ContactUs.html">
@@ -280,11 +284,10 @@ body{
     <section class="bio-section" dir="ltr">
         <div class="container bio-grid">
             <div class="bio-image">
-                <img src="img/6"
-                    alt="About Naharcom International"/>
+                <img src="img/6" alt="About Naharcom International" />
             </div>
             <div class="bio-text">
-                <h1 style="color: #003366;">رؤيتنا في نهاركم الدولية</h1>
+                <h1 style="color: #990000;">رؤيتنا في نهاركم الدولية</h1>
                 <p>
                     في <strong>نهاركم الدولية</strong> نؤمن أن النجاح في التجارة العالمية يبدأ بشريك موثوق.
                     رؤيتنا هي أن نكون الخيار الأول للشركات الباحثة عن حلول لوجستية متكاملة
@@ -313,12 +316,15 @@ body{
         <div class="container footer-container">
             <div class="footer-col">
                 <h3>نهاركم الدولية</h3>
-                <p>نحن نسعى دائماً لتقديم أفضل الخدمات اللوجستية وحلول التصدير  .</p>
+                <p>نحن نسعى دائماً لتقديم أفضل الخدمات اللوجستية وحلول التصدير .</p>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/people/Naharco-Alduwliya-Export-Import/61575225033501/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/people/Naharco-Alduwliya-Export-Import/61575225033501/"
+                        target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/naharcokw/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@naharco.alduwliya?_r=1&_t=ZS-942ff78Z5uS" target="_blank"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://www.linkedin.com/company/naharco-alduwliya-export-import/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.tiktok.com/@naharco.alduwliya?_r=1&_t=ZS-942ff78Z5uS" target="_blank"><i
+                            class="fab fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/company/naharco-alduwliya-export-import/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="footer-col">
@@ -334,27 +340,25 @@ body{
                 <h3>تواصل معنا</h3>
                 <ul>
                     <li>
-                        <a href="https://www.google.com/maps/search/?api=1&query=ش+فهد+السالم+-+برج+شيخة+ميزانين+1+مكتب+10,+القبلة,+مدينة+الكويت,+الكويت" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        style="color: inherit; display: flex; align-items: center;">
+                        <a href="https://www.google.com/maps/search/?api=1&query=ش+فهد+السالم+-+برج+شيخة+ميزانين+1+مكتب+10,+القبلة,+مدينة+الكويت,+الكويت"
+                            target="_blank" rel="noopener noreferrer"
+                            style="color: inherit; display: flex; align-items: center;">
                             <i class="fas fa-map-marker-alt"></i>
                             ش فهد السالم - برج شيخة ميزانين 1 مكتب 10
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://wa.me/96550666060" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        style="color: inherit; display: flex; align-items: center;">
+                        <a href="https://wa.me/96550666060" target="_blank" rel="noopener noreferrer"
+                            style="color: inherit; display: flex; align-items: center;">
                             <i class="fas fa-phone"></i>
                             +96550666060
                         </a>
                     </li>
 
                     <li>
-                        <a href="mailto:NaharCoKw@gmail.com" target="_blank" style="color: inherit; display: flex; align-items: center;">
+                        <a href="mailto:NaharCoKw@gmail.com" target="_blank"
+                            style="color: inherit; display: flex; align-items: center;">
                             <i class="fas fa-envelope"></i> NaharCoKw@gmail.com
                         </a>
                     </li>
