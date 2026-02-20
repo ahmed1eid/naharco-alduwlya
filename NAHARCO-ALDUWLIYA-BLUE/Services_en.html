@@ -4,25 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | NAHARCO ALDUWLYA Logistics</title>
+    <title>Services | NAHARCO ALDUWLIYA Logistics</title>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="NAHARCO_ALDUWLYA.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" href="logo.png">
     <style>
-        /* Overrides for LTR */
-        body {
-            font-family: 'Tajawal', sans-serif;
-            text-align: left;
+        /* CSS جديد للـ modern-grid */
+        .modern-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
         }
 
-        .logo-container {
-            margin-right: 20px;
+        .modern-image, .modern-text {
+            flex: 1 1 500px; /* النص والصورة ياخدوا نفس المساحة */
         }
 
-        .modern-text h2::after {
-            right: auto;
-            left: 0;
+        .modern-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 992px) {
+            .modern-grid {
+                flex-direction: column; /* على الموبايل تكون الصورة فوق النص */
+                text-align: right;
+            }
         }
     </style>
 </head>
@@ -32,16 +44,16 @@
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo-container">
-                <img src="NAHARCO_ALDUWLYA_Logo.png" alt="NAHARCO ALDUWLYA Logo" class="logo-img">
-                <span class="logo-text">NAHARCO ALDUWLYA</span>
+                <img src="NAHARCO_ALDUWLYA_Logo.png" alt="NAHARCO ALDUWLIYA Logo" class="logo-img">
+                <span class="logo-text">NAHARCO ALDUWLIYA</span>
             </div>
+            <a href="Services.html" class="lang-toggle" title="العربية"><i class="fas fa-globe"></i></a>
             <ul class="nav-links">
                 <li><a href="NAHARCO_ALDUWLYA_en.html">Home</a></li>
                 <li><a href="AboutUs_en.html">About Us</a></li>
                 <li><a href="Services_en.html" class="active">Services</a></li>
                 <li><a href="ContactUs_en.html">Contact Us</a></li>
             </ul>
-            <a href="Services.html" class="lang-toggle" title="العربية"><i class="fas fa-globe"></i></a>
             <div class="burger">
                 <span></span>
                 <span></span>
@@ -59,12 +71,16 @@
     </header>
 
     <section class="modern-section container">
+        
         <div class="modern-grid">
+            <div class="modern-image">
+                <img src="img/1en.png" alt="Customs Consultation" style="width: 555px; height: 555px;">
+            </div>
             <div class="modern-text">
-                <h2>Customs & Commercial Consultation</h2>
-                <p>We offer years of experience in international trade to help you make the right decisions. Our team
+                <h2 style="direction: ltr; text-align: left;">Customs & Commercial Consultation</h2>
+                <p style="direction: ltr; text-align: left;">We offer years of experience in international trade to help you make the right decisions. Our team
                     provides full support in:</p>
-                <div class="modern-list">
+                <div class="modern-list"  style="direction: ltr; text-align: left;">
                     <div class="modern-list-item">
                         <i class="fas fa-file-contract"></i>
                         <span>Feasibility studies for commercial projects, as well as import and export between Kuwait and China.</span>
@@ -79,14 +95,17 @@
                     </div>
                 </div>
             </div>
-            <div class="modern-image">
-                <img src="img/1en.png" alt="Customs Consultation" style="width: 555px; height: 555px;">
-            </div>
+            
         </div>
     </section>
 
-    <section class="modern-section container" style="background-color: #f9f9f9; border-radius: 20px;">
+    <section class="modern-section container">
+        
         <div class="modern-grid" style="direction: rtl;"> <!-- Flip layout for variety -->
+                <br>
+            <div class="modern-image">
+                <img src="img/2" alt="Goods Supply" style="width: 555px; height: 555px;">
+            </div>
             <div class="modern-text" style="direction: ltr; text-align: left;">
                 <h2>Sourcing Goods from china to Kuwait Market.</h2>
                 <p>We are your gateway to Chinese factories and the Chinese market. Whether you are looking for a product or a supplier from China, we provide you with the best Chinese suppliers and products with the highest efficiency, quality, and the best prices.</p>
@@ -105,19 +124,19 @@
                     </div>
                 </div>
             </div>
-            <div class="modern-image">
-                <img src="img/2" alt="Goods Supply" style="width: 555px; height: 555px;">
-            </div>
+            
         </div>
     </section>
 
     <section class="modern-section container">
         <div class="modern-grid">
+            <div class="modern-image">
+                <img src="img/3" alt="Logistics Services " style="width: 555px; height: 555px;">
+            </div>
             <div class="modern-text">
-                <span class="sub-title">Logistics</span>
-                <h2>Shipping & Logistics Solutions</h2>
-                <p>Don't worry about shipping details between Kuwait and China, we manage the entire door-to-door logistics process with maximum efficiency and professionalism:</p>
-                <div class="modern-list">
+                <h2 style="direction: ltr; text-align: left;">Shipping & Logistics Solutions</h2>
+                <p style="direction: ltr; text-align: left;">Don't worry about shipping details between Kuwait and China, we manage the entire door-to-door logistics process with maximum efficiency and professionalism:</p>
+                <div class="modern-list" style="direction: ltr; text-align: left;">
                     <div class="modern-list-item">
                         <i class="fas fa-ship"></i>
                         <span>Sea, Air, and Land freight at best rates.</span>
@@ -132,22 +151,19 @@
                     </div>
                 </div>
             </div>
-            <div class="modern-image">
-                <img src="img/3"
-                    alt="Logistics Services" style="width: 555px; height: 555px;"> 
-            </div>
+            
         </div>
     </section>
 
-    <section class="modern-section container" style="background-color: #f4f8fc; border-radius: 20px;">
-        <div class="modern-grid" style="direction: rtl;">
+    <section class="modern-section container">
+        <div class="modern-grid" style="direction: rtl;"> <!-- Flip layout for variety -->
+                <br>
+            <div class="modern-image">
+                <img src="img/14.png" alt="Goods Supply" style="width: 555px; height: 555px;">
+            </div>
             <div class="modern-text" style="direction: ltr; text-align: left;">
-                <span class="sub-title">Engineering</span>
                 <h2>Engineering Consultancy Services</h2>
-                <p>
-                    Our engineering consultancy department provides professional technical support
-                    to help you design, plan, and execute your projects efficiently and safely.
-                </p>
+                <p>Our engineering consultancy department provides professional technical support to help you design, plan, and execute your projects efficiently and safely.</p>
                 <div class="modern-list">
                     <div class="modern-list-item">
                         <i class="fas fa-drafting-compass"></i>
@@ -167,25 +183,22 @@
                     </div>
                 </div>
             </div>
-            <div class="modern-image">
-                <img src="img/14.png" style="width: 555px; height: 555px;" alt="Engineering Consultancy">
-            </div>
+            
         </div>
     </section>
 
-    <section class="modern-section container" style="background-color: #eef6f9; border-radius: 20px;">
-        <div class="modern-grid" style="direction: rtl;">
+    <section class="modern-section container">
+        <div class="modern-grid">
             <div class="modern-image">
-                <img src="img/صورة 1.jpg.jpeg" style="width: 500px; height: 560px;" alt="Field Engineering Consultancy">
+                <img src="img/صورة 1.jpg.jpeg" alt="Customs Consultation" style="width: 555px; height: 555px;">
             </div>
-            <div class="modern-text" style="direction: ltr; text-align: left;">
-                <span class="sub-title">Engineering</span>
-                <h2>Field & Site Engineering Consultancy</h2>
-                <p>
+            <div class="modern-text">
+                <h2 style="direction: ltr; text-align: left;">Field & Site Engineering Consultancy</h2>
+                <p style="direction: ltr; text-align: left;">
                     Our field engineering team provides hands-on support on construction sites,
                     ensuring your projects are executed safely, efficiently, and according to plan.
                 </p>
-                <div class="modern-list">
+                <div class="modern-list"  style="direction: ltr; text-align: left;">
                     <div class="modern-list-item">
                         <i class="fas fa-hard-hat"></i>
                         <span>On-site project supervision and quality control.</span>
@@ -199,19 +212,22 @@
                         <span>Safety inspections and compliance with regulations.</span>
                     </div>
                     <div class="modern-list-item">
-                        <i class="fas fa-road"></i>
+                         <i class="fas fa-road"></i>
                         <span>Site surveys and technical feasibility assessments.</span>
                     </div>
                 </div>
             </div>
-
+            
         </div>
     </section>
 
-    <section class="modern-section container" style="background-color: #f9f9f9; border-radius: 20px;">
-        <div class="modern-grid" style="direction: rtl;">
+    <section class="modern-section container">
+        <div class="modern-grid" style="direction: rtl;"> <!-- Flip layout for variety -->
+                <br>
+            <div class="modern-image">
+                <img src="img/صورة 2.jpg.jpeg" alt="Goods Supply" style="width: 555px; height: 555px;">
+            </div>
             <div class="modern-text" style="direction: ltr; text-align: left;">
-                <span class="sub-title">Engineering</span>
                 <h2>Interior Engineering Consultancy</h2>
                 <p>
                     Our interior engineering consultancy focuses on designing, planning, and supervising
@@ -236,26 +252,21 @@
                     </div>
                 </div>
             </div>
-            <div class="modern-image">
-                <img src="img/صورة 2.jpg.jpeg" style="width: 500px; height: 560px;"
-                    alt="Interior Engineering Consultancy">
-            </div>
+            
         </div>
     </section>
 
-    <section class="modern-section container" style="background-color: #f4f8f9; border-radius: 20px;">
-        <div class="modern-grid" style="direction: rtl;">
+    <section class="modern-section container">
+        <div class="modern-grid">
             <div class="modern-image">
-                <img src="img/11.png" alt="Sanitary Materials" style="width: 555px; height: 555px;">
+                <img src="img/11.png" alt="Customs Consultation" style="width: 555px; height: 555px;">
             </div>
-            <div class="modern-text" style="direction: ltr; text-align: left;">
-                <span class="sub-title">Sanitary</span>
-                <h2>Sanitary Materials & Equipment</h2>
-                <p>
-                    We provide high-quality sanitary materials and equipment for residential,
-                    commercial, and industrial projects. Our products meet international standards.
+            <div class="modern-text">
+                <h2 style="direction: ltr; text-align: left;">Sanitary Materials & Equipment</h2>
+                <p style="direction: ltr; text-align: left;">
+                    We provide high-quality sanitary materials and equipment for residential, commercial, and industrial projects. Our products meet international standards. 
                 </p>
-                <div class="modern-list">
+                <div class="modern-list" style="direction: ltr; text-align: left;">
                     <div class="modern-list-item">
                         <i class="fas fa-toilet"></i>
                         <span>Sanitary fixtures for bathrooms and kitchens.</span>
@@ -274,13 +285,17 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
-    <section class="modern-section container" style="background-color: #f9f9f9; border-radius: 20px;">
-        <div class="modern-grid" style="direction: rtl;">
+    <section class="modern-section container">
+        <div class="modern-grid" style="direction: rtl;"> <!-- Flip layout for variety -->
+                <br>
+            <div class="modern-image">
+                <img src="img/3.png" alt="Goods Supply" style="width: 555px; height: 555px;">
+            </div>
             <div class="modern-text" style="direction: ltr; text-align: left;">
-                <span class="sub-title">Finishing</span>
                 <h2>Interior & Exterior Finishing Materials</h2>
                 <p>
                     We supply premium finishing materials for both interior and exterior projects,
@@ -292,7 +307,7 @@
                         <span>High-quality paints and coatings for walls and ceilings.</span>
                     </div>
                     <div class="modern-list-item">
-                        <i class="fas fa-floor-plan"></i>
+                        <i class="fas fa-tools"></i>
                         <span>Flooring materials including tiles, marble, and laminates.</span>
                     </div>
                     <div class="modern-list-item">
@@ -305,30 +320,28 @@
                     </div>
                 </div>
             </div>
-            <div class="modern-image">
-                <img src="img/3.png" alt="Finishing Materials" style="width: 555px; height: 555px;">
-            </div>
+            
         </div>
     </section>
 
-    <section class="modern-section container" style="background-color: #eef6f9; border-radius: 20px;">
-        <div class="modern-grid" style="direction: rtl;">
+    <section class="modern-section container">
+        <div class="modern-grid">
             <div class="modern-image">
-                <img src="img/33.png" style="width: 500px; height: 560px;" alt="Building Materials">
+                <img src="img/33.png" alt="Customs Consultation" style="width: 555px; height: 555px;">
             </div>
-            <div class="modern-text" style="direction: ltr; text-align: left;">
-                <h2>Building Materials Supply</h2>
-                <p>
+            <div class="modern-text">
+                <h2 style="direction: ltr; text-align: left;">Building Materials Supply</h2>
+                <p style="direction: ltr; text-align: left;">
                     We provide high-quality building materials for all types of construction projects,
                     ensuring durability, safety, and compliance with international standards.
                 </p>
-                <div class="modern-list">
+                <div class="modern-list" style="direction: ltr; text-align: left;">
                     <div class="modern-list-item">
                         <i class="fas fa-cube"></i>
                         <span>Concrete, cement, and aggregates for strong foundations.</span>
                     </div>
                     <div class="modern-list-item">
-                        <i class="fas fa-bricks"></i>
+                        <i class="fas fa-cube"></i>
                         <span>Bricks, blocks, and masonry materials.</span>
                     </div>
                     <div class="modern-list-item">
@@ -341,24 +354,23 @@
                     </div>
                 </div>
             </div>
-
+            
         </div>
     </section>
 
-
-    <section class="modern-section container" style="background-color: #eef6f9; border-radius: 20px;">
-        <div class="modern-grid" style="direction: rtl;">
+    <section class="modern-section container">
+        
+        <div class="modern-grid" style="direction: rtl;"> <!-- Flip layout for variety -->
+                <br>
             <div class="modern-image">
-                <img src="img/5.jpg" style="width: 500px; height: 560px;" alt="Electric Tools">
+                <img src="img/5.jpg" alt="Goods Supply" style="width: 555px; height: 555px;">
             </div>
-
             <div class="modern-text" style="direction: ltr; text-align: left;">
                 <h2>Electric Tools Supply</h2>
                 <p>
                     We provide high-quality electric tools for construction and industrial projects,
                     ensuring efficiency, durability, and safety.
                 </p>
-
                 <div class="modern-list">
                     <div class="modern-list-item">
                         <i class="fas fa-bolt"></i>
@@ -378,15 +390,9 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
-
-
-
-
-
-
-
 
     <section class="container" style="text-align: center; margin-bottom: 80px;">
         <div class="modern-card"
@@ -402,15 +408,14 @@
     <footer id="contact" class="footer">
         <div class="container footer-container">
             <div class="footer-col">
-                <h3>NAHARCO ALDUWLYA</h3>
+                <h3>NAHARCO ALDUWLIYA</h3>
                 <p>We always strive to provide the best logistics services and export solutions to our clients
                     worldwide.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/people/Naharco-Alduwliya-Export-Import/61575225033501/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/naharcokw/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@naharco.alduwliya?_r=1&_t=ZS-942ff78Z5uS" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/company/naharco-alduwliya-export-import/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="footer-col">
@@ -419,32 +424,48 @@
                     <li><a href="NAHARCO_ALDUWLYA_en.html">Home</a></li>
                     <li><a href="AboutUs_en.html">About Us</a></li>
                     <li><a href="Services_en.html">Services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="ContactUs_en.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h3>Contact Us</h3>
                 <ul>
-                    <li><a href="https://www.google.com/maps/search/?api=1&query=Kuwait" target="_blank"
-                            style="color: inherit; display: flex; align-items: center;"><i
-                                class="fas fa-map-marker-alt"></i> Kuwait</a></li>
-                    <li><a href="https://wa.me/966123456789" target="_blank"
-                            style="color: inherit; display: flex; align-items: center;"><i class="fas fa-phone"></i>
-                            50666060</a></li>
-                    <li><a href="mailto:info@NAHARCOALDUWLYA.com"
-                            style="color: inherit; display: flex; align-items: center;"><i class="fas fa-envelope"></i>
-                            info@NAHARCOALDUWLYA.com</a></li>
+                    <li>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Fahad+Al+Salem+Street+-+Sheikha+Tower,+Mezzanine+1,+Office+10,+Al+Qibla,+Kuwait+City,+Kuwait" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        style="color: inherit; display: flex; align-items: center;">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Fahad Al Salem Street - Sheikha Tower, Mezzanine 1, Office 10
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://wa.me/96550666060" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        style="color: inherit; display: flex; align-items: center;">
+                            <i class="fas fa-phone"></i>
+                            +96550666060
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:NaharCoKw@gmail.com" target="_blank" style="color: inherit; display: flex; align-items: center;">
+                            <i class="fas fa-envelope"></i> NaharCoKw@gmail.com
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 NAHARCO ALDUWLYA. All Rights Reserved.</p>
+            <p>All Rights Reserved @ NAHARCO ALDUWLIYA</p>
         </div>
     </footer>
 
     <!-- Logo Lightbox -->
     <div class="logo-lightbox">
-        <img src="NAHARCO_ALDUWLYA_Logo.png" alt="NAHARCO ALDUWLYA Logo">
+        <img src="NAHARCO_ALDUWLYA_Logo.png" alt="NAHARCO ALDUWLIYA Logo">
     </div>
 
     <script src="NAHARCO_ALDUWLYA.js"></script>
