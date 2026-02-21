@@ -1,37 +1,46 @@
-markdown
+# Naharco International Project
 
-# NAHARCO ALDUWLIYA
+Welcome to the **Naharco International** project! This repository showcases a comprehensive web application designed to provide information about the Naharco International organization. The application aims to offer an engaging user experience to highlight the services provided by the organization.
 
-Welcome to the NAHARCO-ALDUWLYA project! This repository showcases a comprehensive web application designed to provide information about the NAHARCO ALDUWLIYA organization. The application is structured to offer an engaging user experience to showcase the services provided by the organization.
-
-
-## Project Demo 
+## Project Demo En
 ![](naharco.png)
 
 
+## Project Demo Ar
+![](naharcoar.png)
+
 ## Project Description
 
-NAHARCO-ALDUWLYA is a personal and professional platform that aims to highlight the various services offered by NAHARCO ALDUWLIYA. This web application includes sections dedicated to the organization's mission, services, blog posts, and contact information, making it easier for users to navigate through relevant information and reach out for inquiries.
+Naharco International is a personal and professional platform that aims to showcase the various services offered by Naharco International. The web application includes sections dedicated to the organization's mission, services, blog posts, and contact information, facilitating navigation and outreach for inquiries.
 
-### Features
+### Key Features
 
 - **Home Page**: A welcoming introduction to the organization.
 - **About Us**: Detailed information about the organization's mission and values.
-- **Services**: Overview of the services offered.
+- **Services**: Overview of the services provided.
 - **Blog**: A section for sharing insights and updates.
-- **Contact Us**: Easy access for users to reach out and connect.
+- **Contact Us**: Easy access for users to get in touch.
 
 ## Tech Stack
 
-The NAHARCO-ALDUWLYA project is built using the following technologies:
+The Naharco International project is built using the following technologies:
 
 - **HTML**: For structuring the web pages.
 - **CSS**: For styling and enhancing the visual appeal of the application.
 - **JavaScript**: For creating interactive elements and improving user experience.
 
-## Live Demo
+## Live Server
 
-You can view the live version of the application at: [Live Demo]( https://islam412.github.io/NAHARCO-ALDUWLIYA/)
+You can view the live version of the application at the following link:  
+[Live Demo](#)  
+
+## Contributors
+
+This project is a collaborative effort by multiple developers:
+
+- **Islam Hamdy**: islam.124.hamdy@gmail.com
+- **Adel Ahmed**: adel.307.ahmed@gmail.com
+- **Ahmed Eid**: eid93461@gmail.com
 
 ## Installation
 
@@ -39,16 +48,18 @@ To run the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Islam412/NAHARCO-ALDUWLIYA.git
-   cd NAHARCO-ALDUWLYA
+   git clone https://github.com/ahmed1eid/naharco-alduwlya.git
 
-    Open index.html in your preferred web browser.
+Navigate into the project directory:
+bash
+cd naharco-alduwlya
 
+Open index.html in your preferred web browser.
 Contribution
+Feel free to fork the repository and submit pull requests. Feedback and suggestions for improvement are always welcome!
 
-Contributions are welcome! Feel free to fork the repository and submit pull requests. Your feedback and suggestions for improvement are highly appreciated.
-Contact
+Thank you for visiting the Naharco International project!
 
-For any inquiries, you can reach out to me via email at: islam.124.hamdy@gmail.com
 
-Thank you for visiting the NAHARCO-ALDUWLYA project!
+This format follows standard conventions for README files, ensuring clarity and organization.
+
